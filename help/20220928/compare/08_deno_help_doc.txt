@@ -1,0 +1,69 @@
+deno-doc 
+Show documentation for a module.
+
+Output documentation to standard output:
+
+    deno doc ./path/to/module.ts
+
+Output private documentation to standard output:
+
+    deno doc --private ./path/to/module.ts
+
+Output documentation in JSON format:
+
+    deno doc --json ./path/to/module.ts
+
+Target a specific symbol:
+
+    deno doc ./path/to/module.ts MyClass.someField
+
+Show documentation for runtime built-ins:
+
+    deno doc
+    deno doc --builtin Deno.Listener
+
+USAGE:
+    deno doc [OPTIONS] [--] [ARGS]
+
+ARGS:
+    <source_file>
+            
+
+    <filter>
+            Dot separated path to symbol
+
+OPTIONS:
+    -h, --help
+            Print help information
+
+        --import-map <FILE>
+            Load import map file from local file or remote URL.
+              Docs:
+            https://deno.land/manual@v1.25.4/linking_to_external_code/import_maps
+              Specification: https://wicg.github.io/import-maps/
+              Examples: https://github.com/WICG/import-maps#the-import-map
+
+        --json
+            Output documentation in JSON format
+
+        --private
+            Output private documentation
+
+    -q, --quiet
+            Suppress diagnostic output
+
+    -r, --reload[=<CACHE_BLOCKLIST>...]
+            Reload source code cache (recompile TypeScript)
+            --reload
+              Reload everything
+            --reload=https://deno.land/std
+              Reload only standard modules
+            --reload=https://deno.land/std/fs/utils.ts,https://deno.land/std/fmt/colors.ts
+              Reloads specific modules
+            --reload=npm:
+              Reload all npm modules
+            --reload=npm:chalk
+              Reload specific npm module
+
+        --unstable
+            Enable unstable features and APIs

@@ -1,0 +1,19 @@
+2022-12-09
+deno 1.26.1
+Looking up latest version
+Found latest version 1.28.3
+Checking https://github.com/denoland/deno/releases/download/v1.28.3/deno-x86_64-pc-windows-msvc.zip
+28.6 MiB / 28.6 MiB (100.0%)
+Deno is upgrading to version 1.28.3
+Upgraded successfully
+deno 1.28.3
+
+deno 1.28.3
+Looking up latest version
+Found latest version 1.29.1
+Checking https://github.com/denoland/deno/releases/download/v1.29.1/deno-x86_64-pc-windows-msvc.zip
+28.6 MiB / 28.6 MiB (100.0%)
+Deno is upgrading to version 1.29.1
+Upgraded successfully
+deno 1.29.1
+

@@ -1,0 +1,1 @@
+(cls && deno -V >>upgrade.txt && deno upgrade >>upgrade.txt && deno -V >>upgrade.txt && echo. >>upgrade.txt && start "" notepad upgrade.txt) || pause

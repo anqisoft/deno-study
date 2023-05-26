@@ -1,0 +1,42 @@
+deno-vendor 
+Vendor remote modules into a local directory
+
+USAGE:
+    deno vendor [OPTIONS] <specifiers>...
+
+ARGS:
+    <specifiers>...    
+
+OPTIONS:
+    -c, --config <FILE>
+            Specify the configuration file
+
+        --cert <FILE>
+            Load certificate authority from PEM encoded file
+
+    -f, --force
+            Forcefully overwrite conflicting files in existing output directory
+
+    -h, --help
+            Print help information
+
+        --import-map <FILE>
+            Load import map file
+
+        --lock <FILE>
+            Check the specified lock file
+
+        --no-config
+            Disable automatic loading of the configuration file.
+
+        --output <output>
+            The directory to output the vendored modules to
+
+    -q, --quiet
+            Suppress diagnostic output
+
+    -r, --reload[=<CACHE_BLOCKLIST>...]
+            Reload source code cache (recompile TypeScript)
+
+        --unstable
+            Enable unstable features and APIs

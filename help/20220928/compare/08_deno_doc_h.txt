@@ -1,0 +1,31 @@
+deno-doc 
+Show documentation for a module
+
+USAGE:
+    deno doc [OPTIONS] [--] [ARGS]
+
+ARGS:
+    <source_file>    
+    <filter>         Dot separated path to symbol
+
+OPTIONS:
+    -h, --help
+            Print help information
+
+        --import-map <FILE>
+            Load import map file
+
+        --json
+            Output documentation in JSON format
+
+        --private
+            Output private documentation
+
+    -q, --quiet
+            Suppress diagnostic output
+
+    -r, --reload[=<CACHE_BLOCKLIST>...]
+            Reload source code cache (recompile TypeScript)
+
+        --unstable
+            Enable unstable features and APIs

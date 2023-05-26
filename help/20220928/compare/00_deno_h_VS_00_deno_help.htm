@@ -1,0 +1,551 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+.ln {text-align: right; word-break: normal; color: #000000; background-color: #f0f0f0;}
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">P:\anqi\Desktop\tech\deno\help\20220928\compare\00_deno_h.txt</th>
+<th colspan="2" class="title" style="width:50.000000%">P:\anqi\Desktop\tech\deno\help\20220928\compare\00_deno_help.txt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">deno 1.25.4+9a9dd12</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">deno 1.25.4+9a9dd12</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">A modern JavaScript and TypeScript runtime</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Docs: https://deno.land/manual@v1.25.4</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Modules: https://deno.land/std/ https://deno.land/x/</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Bugs: https://github.com/denoland/deno/issues<wbr></span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">To start the REPL:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; deno</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">To execute a script:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; deno run https://deno.land/std/examples/welcome.<wbr>ts</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">To evaluate code in the shell:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; deno eval "console.log(30933 + 404)"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">USAGE:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">USAGE:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; deno [OPTIONS] [SUBCOMMAND]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; deno [OPTIONS] [SUBCOMMAND]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">OPTIONS:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">OPTIONS:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; -h, --help &nbsp; &nbsp; &nbsp; &nbsp;Print help information</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; -h, --help</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; -q, --quiet &nbsp; &nbsp; &nbsp; Suppress diagnostic output</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Print help information</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; --unstable &nbsp; &nbsp;Enable unstable features and APIs</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; -V, --version &nbsp; &nbsp; Print version information</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; -q, --quiet</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Suppress diagnostic output</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; --unstable</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Enable unstable features and APIs</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; -V, --version</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Print version information</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">SUBCOMMANDS:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">SUBCOMMANDS:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; bench &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">Run</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">benchmarks</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; bench</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">bundle</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b16">Bundle</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">module</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">dependencies</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">into</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">single</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">file</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Run</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">benchmarks</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">cache</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Cache</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">dependencies</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">bundle</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">check</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Type-check</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;dependencies</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Bundle</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">module</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">and</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;dependencies </span><span class="sf17b18">into</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">single</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">file</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">compile</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">UNSTABLE:</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">Compile</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">script</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">into</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">self</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">contained</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">cache</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b16">executable</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Cache</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">dependencies</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">completions</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">Generate</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">shell</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">completions</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">check</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b16">Print</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">reports</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Type-check</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">dependencies</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">doc</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Show</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">documentation</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">module</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">compile</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">eval</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b16">Eval</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">script</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">UNSTABLE:</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">Compile</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;script </span><span class="sf17b18">into</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">self</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">contained</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">executable</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">fmt</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Format</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">source</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">files</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">completions</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">help</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b16">Print</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">this</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">message</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">help</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">given</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">subcommand(s)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Generate</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">shell</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">completions</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">info</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">Show</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">info</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">about</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">cache</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">info</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">related</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">source</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">file</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">coverage</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">init</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b16">Initialize</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">new</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">project</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Print</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">reports</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">install</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Install</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">script</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">as</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">an</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">executable</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">doc</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">lint</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b16">Lint</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">source</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">files</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Show</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">documentation</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">module</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">lsp</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Start</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">language</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">server</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">eval</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">repl</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">Read</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;Eval </span><span class="sf17b16">Print</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">Loop</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Eval </span><span class="sf17b16">script</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">run</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Run</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">JavaScript</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">TypeScript</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">program</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">fmt</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">task</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b16">Run</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">task</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">defined</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">configuration</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">file</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Format</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">source</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">files</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">test</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">Run</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">tests</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">help</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">types</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Print </span><span class="sf17b16">runtime</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">TypeScript</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">declarations</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">Print </span><span class="sf17b16">this</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">message</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">or</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">help</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">of</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">given</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">subcommand(s)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">uninstall</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Uninstall</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">script</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">previously</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">installed</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">deno</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">install</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">info</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">upgrade</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Upgrade</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">deno</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">executable</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">to </span><span class="sf17b16">given</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">version</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Show</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">info</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">about</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">cache</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">info</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">related</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;to </span><span class="sf17b16">source</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">file</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">vendor</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">Vendor</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">remote</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">modules</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">into</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">local</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">directory</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">init</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Initialize</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">new</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">project</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">install</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Install</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">script</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">as</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">an</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">executable</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">lint</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Lint</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">source</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">files</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">lsp</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Start</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">language</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">server</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">repl</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Read</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">Eval</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">Print</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">Loop</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">run</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Run</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">JavaScript</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">or</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">TypeScript</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">program</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">task</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Run</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">task</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">defined</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">configuration</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">file</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">test</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Run</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">tests</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">types</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Print</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">runtime</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">TypeScript</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">declarations</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">uninstall</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Uninstall</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">script</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">previously</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">installed</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">deno</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">install</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">upgrade</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Upgrade</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">deno</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">executable</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">given</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">version</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">vendor</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Vendor</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">remote</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">modules</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">into</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">local</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">directory</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">ENVIRONMENT VARIABLES:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">ENVIRONMENT VARIABLES:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_AUTH_TOKENS &nbsp; &nbsp; A semi-colon separated list of bearer tokens and</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_AUTH_TOKENS &nbsp; &nbsp; A semi-colon separated list of bearer tokens and</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hostnames to use when fetching remote modules from</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hostnames to use when fetching remote modules from</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;private repositories</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;private repositories</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(e.g. "abcde12345@deno.land;54321edcba@github<wbr>.com")</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(e.g. "abcde12345@deno.land;54321edcba@github<wbr>.com")</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_TLS_CA_STORE &nbsp; &nbsp;Comma-separated list of order dependent certificate</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_TLS_CA_STORE &nbsp; &nbsp;Comma-separated list of order dependent certificate</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;stores. Possible values: "system", "mozilla".</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;stores. Possible values: "system", "mozilla".</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Defaults to "mozilla".</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Defaults to "mozilla".</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_CERT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Load certificate authority from PEM encoded file</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_CERT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Load certificate authority from PEM encoded file</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_DIR &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Set the cache directory</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_DIR &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Set the cache directory</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_INSTALL_ROOT &nbsp; &nbsp;Set deno install's output directory</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_INSTALL_ROOT &nbsp; &nbsp;Set deno install's output directory</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(defaults to $HOME/.deno/bin)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(defaults to $HOME/.deno/bin)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_NO_PROMPT &nbsp; &nbsp; &nbsp; Set to disable permission prompts on access</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_NO_PROMPT &nbsp; &nbsp; &nbsp; Set to disable permission prompts on access</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(alternative to passing --no-prompt on invocation)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(alternative to passing --no-prompt on invocation)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_WEBGPU_TRACE &nbsp; &nbsp;Directory to use for wgpu traces</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_WEBGPU_TRACE &nbsp; &nbsp;Directory to use for wgpu traces</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_JOBS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Number of parallel workers used for the --parallel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; DENO_JOBS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Number of parallel workers used for the --parallel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;flag with the test subcommand. Defaults to number</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;flag with the test subcommand. Defaults to number</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;of available CPUs.</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;of available CPUs.</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; HTTP_PROXY &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Proxy address for HTTP requests</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; HTTP_PROXY &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Proxy address for HTTP requests</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(module downloads, fetch)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(module downloads, fetch)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; HTTPS_PROXY &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Proxy address for HTTPS requests</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; HTTPS_PROXY &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Proxy address for HTTPS requests</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(module downloads, fetch)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(module downloads, fetch)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; NO_COLOR &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Set to disable color</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; NO_COLOR &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Set to disable color</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; NO_PROXY &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Comma-separated list of hosts which do not use a proxy</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; NO_PROXY &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Comma-separated list of hosts which do not use a proxy</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(module downloads, fetch)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(module downloads, fetch)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

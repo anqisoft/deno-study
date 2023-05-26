@@ -1,0 +1,71 @@
+deno-coverage 
+Print coverage reports from coverage profiles.
+
+Collect a coverage profile with deno test:
+
+  deno test --coverage=cov_profile
+
+Print a report to stdout:
+
+  deno coverage cov_profile
+
+Include urls that start with the file schema:
+
+  deno coverage --include="^file:" cov_profile
+
+Exclude urls ending with test.ts and test.js:
+
+  deno coverage --exclude="test\.(ts|js)" cov_profile
+
+Include urls that start with the file schema and exclude files ending with
+test.ts and test.js, for an url to match it must match the include pattern and
+not match the exclude pattern:
+
+  deno coverage --include="^file:" --exclude="test\.(ts|js)" cov_profile
+
+Write a report using the lcov format:
+
+  deno coverage --lcov --output=cov.lcov cov_profile/
+
+Generate html reports from lcov:
+
+  genhtml -o html_cov cov.lcov
+
+USAGE:
+    deno coverage [OPTIONS] <files>...
+
+ARGS:
+    <files>...
+            
+
+OPTIONS:
+        --exclude=<regex>...
+            Exclude source files from the report
+            
+            [default: test\.(js|mjs|ts|jsx|tsx)$]
+
+    -h, --help
+            Print help information
+
+        --ignore=<ignore>
+            Ignore coverage files
+
+        --include=<regex>...
+            Include source files in the report
+            
+            [default: ^file:]
+
+        --lcov
+            Output coverage report in lcov format
+
+        --output=<output>
+            Exports the coverage report in lcov format to the given file.
+            Filename should be passed along with '=' For example
+            '--output=foo.lcov' If no --output arg is specified then the report
+            is written to stdout.
+
+    -q, --quiet
+            Suppress diagnostic output
+
+        --unstable
+            Enable unstable features and APIs

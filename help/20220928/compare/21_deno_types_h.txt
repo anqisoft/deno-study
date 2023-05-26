@@ -1,0 +1,10 @@
+deno-types 
+Print runtime TypeScript declarations
+
+USAGE:
+    deno types [OPTIONS]
+
+OPTIONS:
+    -h, --help        Print help information
+    -q, --quiet       Suppress diagnostic output
+        --unstable    Enable unstable features and APIs

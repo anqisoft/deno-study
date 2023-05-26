@@ -1,0 +1,13 @@
+deno-completions 
+Generate shell completions
+
+USAGE:
+    deno completions [OPTIONS] <shell>
+
+ARGS:
+    <shell>    [possible values: bash, fish, powershell, zsh, fig]
+
+OPTIONS:
+    -h, --help        Print help information
+    -q, --quiet       Suppress diagnostic output
+        --unstable    Enable unstable features and APIs

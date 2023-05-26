@@ -1,0 +1,33 @@
+deno-uninstall 
+Uninstalls an executable script in the installation root's bin directory.
+
+  deno uninstall serve
+
+To change the installation root, use --root:
+
+  deno uninstall --root /usr/local serve
+
+The installation root is determined, in order of precedence:
+  - --root option
+  - DENO_INSTALL_ROOT environment variable
+  - $HOME/.deno
+
+USAGE:
+    deno uninstall [OPTIONS] <name>
+
+ARGS:
+    <name>
+            
+
+OPTIONS:
+    -h, --help
+            Print help information
+
+    -q, --quiet
+            Suppress diagnostic output
+
+        --root <root>
+            Installation root
+
+        --unstable
+            Enable unstable features and APIs

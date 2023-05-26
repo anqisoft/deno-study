@@ -1,0 +1,8 @@
+old/
+.idea/
+coverage/
+.DS_Store
+.nyc_output/
+.node_modules/
+bench/node_modules/
+bench/package-lock.json

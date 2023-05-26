@@ -1,0 +1,16 @@
+deno-upgrade 
+Upgrade deno executable to given version
+
+USAGE:
+    deno upgrade [OPTIONS]
+
+OPTIONS:
+        --canary               Upgrade to canary builds
+        --cert <FILE>          Load certificate authority from PEM encoded file
+        --dry-run              Perform all checks without replacing old exe
+    -f, --force                Replace current exe even if not out-of-date
+    -h, --help                 Print help information
+        --output <output>      The path to output the updated version to
+    -q, --quiet                Suppress diagnostic output
+        --unstable             Enable unstable features and APIs
+        --version <version>    The version to upgrade to

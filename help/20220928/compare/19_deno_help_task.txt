@@ -1,0 +1,32 @@
+deno-task 
+Run a task defined in the configuration file
+
+  deno task build
+
+USAGE:
+    deno task [OPTIONS] [task_name_and_args]...
+
+ARGS:
+    <task_name_and_args>...
+            Task to be executed with any additional arguments passed to the task
+
+OPTIONS:
+    -c, --config <FILE>
+            The configuration file can be used to configure different aspects of
+            deno including TypeScript, linting, and code formatting. Typically
+            the configuration file will be called `deno.json` or `deno.jsonc`
+            and automatically detected; in that case this flag is not necessary.
+            See
+            https://deno.land/manual@v1.25.4/getting_started/configuration_file
+
+        --cwd <DIR>
+            Specify the directory to run the task in
+
+    -h, --help
+            Print help information
+
+    -q, --quiet
+            Suppress diagnostic output
+
+        --unstable
+            Enable unstable features and APIs

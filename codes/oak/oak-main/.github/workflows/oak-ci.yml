@@ -1,0 +1,52 @@
+name: ci
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: tests (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+      fail-fast: true
+    steps:
+      - uses: actions/checkout@v2
+      - name: download deno
+        uses: denoland/setup-deno@main
+        with:
+          deno-version: canary
+
+      - name: check format
+        if: matrix.os == 'ubuntu-latest'
+        run: deno fmt --check
+
+      - name: check linting
+        if: matrix.os == 'ubuntu-latest'
+        run: deno lint
+
+      - name: generate bundle
+        run: deno task test:bundle
+
+      - name: run tests
+        run: deno task test
+      
+      - name: run tests no check
+        run: deno task test:no-check
+
+      - name: run tests unstable
+        run: deno task test:unstable
+
+      - name: test build for Node.js
+        if: matrix.os == 'ubuntu-latest'
+        run: deno task build
+
+      - name: generate lcov
+        if: matrix.os == 'ubuntu-latest'
+        run: deno task coverage > cov.lcov
+
+      - name: upload coverage
+        if: matrix.os == 'ubuntu-latest'
+        uses: codecov/codecov-action@v2
+        with:
+          files: cov.lcov

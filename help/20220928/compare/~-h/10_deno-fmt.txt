@@ -1,0 +1,56 @@
+deno-fmt 
+Format source files
+
+USAGE:
+    deno fmt [OPTIONS] [files]...
+
+ARGS:
+    <files>...    
+
+OPTIONS:
+    -c, --config <FILE>
+            Specify the configuration file
+
+        --check
+            Check if the source files are formatted
+
+        --ext <ext>
+            Set standard input (stdin) content type [default: ts] [possible
+            values: ts, tsx, js, jsx, md, json, jsonc]
+
+    -h, --help
+            Print help information
+
+        --ignore=<ignore>
+            Ignore formatting particular source files
+
+        --no-clear-screen
+            Do not clear terminal screen when under watch mode
+
+        --no-config
+            Disable automatic loading of the configuration file.
+
+        --options-indent-width <options-indent-width>
+            Define indentation width. Defaults to 2.
+
+        --options-line-width <options-line-width>
+            Define maximum line width. Defaults to 80.
+
+        --options-prose-wrap <options-prose-wrap>
+            Define how prose should be wrapped. Defaults to always. [possible
+            values: always, never, preserve]
+
+        --options-single-quote
+            Use single quotes. Defaults to false.
+
+        --options-use-tabs
+            Use tabs instead of spaces for indentation. Defaults to false.
+
+    -q, --quiet
+            Suppress diagnostic output
+
+        --unstable
+            Enable unstable features and APIs
+
+        --watch
+            Watch for file changes and restart automatically

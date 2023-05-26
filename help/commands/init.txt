@@ -1,0 +1,13 @@
+deno-init 
+Initialize a new project
+
+USAGE:
+    deno init [OPTIONS] [dir]
+
+ARGS:
+    <dir>    
+
+OPTIONS:
+    -h, --help        Print help information
+    -q, --quiet       Suppress diagnostic output
+        --unstable    Enable unstable features and APIs

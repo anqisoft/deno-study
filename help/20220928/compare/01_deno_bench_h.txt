@@ -1,0 +1,109 @@
+deno-bench 
+Run benchmarks
+
+USAGE:
+    deno bench [OPTIONS] [files]... [-- <SCRIPT_ARG>...]
+
+ARGS:
+    <files>...         List of file names to run
+    <SCRIPT_ARG>...    Script arg
+
+OPTIONS:
+    -A, --allow-all
+            Allow all permissions
+
+        --allow-env[=<allow-env>...]
+            Allow environment access
+
+        --allow-ffi[=<allow-ffi>...]
+            Allow loading dynamic libraries
+
+        --allow-hrtime
+            Allow high resolution time measurement
+
+        --allow-net[=<allow-net>...]
+            Allow network access
+
+        --allow-read[=<allow-read>...]
+            Allow file system read access
+
+        --allow-run[=<allow-run>...]
+            Allow running subprocesses
+
+        --allow-write[=<allow-write>...]
+            Allow file system write access
+
+    -c, --config <FILE>
+            Specify the configuration file
+
+        --cached-only
+            Require that remote dependencies are already cached
+
+        --cert <FILE>
+            Load certificate authority from PEM encoded file
+
+        --check[=<CHECK_TYPE>...]
+            Type-check modules
+
+        --filter <filter>
+            Run benchmarks with this string or pattern in the bench name
+
+    -h, --help
+            Print help information
+
+        --ignore=<ignore>
+            Ignore files
+
+        --import-map <FILE>
+            Load import map file
+
+        --location <HREF>
+            Value of 'globalThis.location' used by some web APIs
+
+        --lock <FILE>
+            Check the specified lock file
+
+        --lock-write
+            Write lock file (use with --lock)
+
+        --no-check[=<NO_CHECK_TYPE>...]
+            Skip type-checking modules
+
+        --no-clear-screen
+            Do not clear terminal screen when under watch mode
+
+        --no-config
+            Disable automatic loading of the configuration file.
+
+        --no-npm
+            Do not resolve npm modules
+
+        --no-prompt
+            Always throw if required permission wasn't passed
+
+        --no-remote
+            Do not resolve remote modules
+
+        --node-modules-dir
+            Creates a local node_modules folder
+
+    -q, --quiet
+            Suppress diagnostic output
+
+    -r, --reload[=<CACHE_BLOCKLIST>...]
+            Reload source code cache (recompile TypeScript)
+
+        --seed <NUMBER>
+            Set the random number generator seed
+
+        --unsafely-ignore-certificate-errors[=<HOSTNAMES>...]
+            DANGER: Disables verification of TLS certificates
+
+        --unstable
+            Enable unstable features and APIs
+
+        --v8-flags=<v8-flags>
+            Set V8 command line options
+
+        --watch
+            Watch for file changes and restart automatically

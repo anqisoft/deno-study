@@ -1,0 +1,5 @@
+.idea/
+tests/
+.github/
+coverage/
+.nyc_output/

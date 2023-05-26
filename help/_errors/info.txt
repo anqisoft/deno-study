@@ -1,0 +1,5 @@
+[0m[1mDENO_DIR location:[0m C:\Users\AnQi1\AppData\Local\deno
+[0m[1mRemote modules cache:[0m C:\Users\AnQi1\AppData\Local\deno\deps
+[0m[1mEmitted modules cache:[0m C:\Users\AnQi1\AppData\Local\deno\gen
+[0m[1mLanguage server registries cache:[0m C:\Users\AnQi1\AppData\Local\deno\registries
+[0m[1mOrigin storage:[0m C:\Users\AnQi1\AppData\Local\deno\location_data

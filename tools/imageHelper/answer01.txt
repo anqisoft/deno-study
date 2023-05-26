@@ -1,0 +1,25 @@
+The developer is not Chinese, so I suggest you ask question in English. By the way, I am a Chinese also, and my English is poor. I use fanyi.baidu.com to solute this problem.
+This library is updated on Dec 5, 2020， so I suggest you use other library to solute it.
+Perhaps the imagescript library or the imagemagick library can help you. 
+See: https://deno.land/x/imagescript@v1.2.14/mod.ts
+See: https://deno.land/x/imagemagick_deno@0.0.14/mod.ts
+====================================================================================================================================================
+The developer is not Chinese, so I suggest you use English to ask questions. By the way, I am also a Chinese, and my English is very poor. I usually use Baidu Translation to solve this problem.
+This library was last updated on December 5, 2020, so I suggest you solve this problem with other libraries.
+
+Maybe imagescript or imagemagick can help you. Please refer to:
+https://deno.land/x/imagescript @v1.2.14/mod.ts
+https://deno.land/x/imagemagick_deno @0.0.14/mod.ts
+
+This is a sample, I use other libraries to solute another problem:
+https://github.com/denorg/qrcode/issues/9
+====================================================================================================================================================
+开发者并非中国人，因此建议您使用英文进行提问。顺便说说，我也是一名中国人，而且我的英语挺差的，通常我使用百度翻译来解決这个问题。
+这个库上次更新于2020年12月5日，所以建议您结合其它库来解决这个问题。
+
+也许deno库imagescript或imagemagick能帮助到您，请参考：
+https://deno.land/x/imagescript@v1.2.14/mod.ts
+https://deno.land/x/imagemagick_deno@0.0.14/mod.ts
+
+以下是我结合其它库来解决另一个问题的例子：
+https://github.com/denorg/qrcode/issues/9

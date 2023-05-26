@@ -1,0 +1,78 @@
+P:\2022\20220613a\3code\9_tools\deno\deploy\0502_Broadcastchannel>deployctl run --no-check --watch main.ts
+deployctl 1.3.0
+Command line tool for Deno Deploy.
+
+To deploy a local script:
+  deployctl deploy --project=helloworld ./main.ts
+
+To deploy a remote script:
+  deployctl deploy --project=helloworld https://deno.land/x/deploy/examples/hello.js
+
+SUBCOMMANDS:
+    deploy    Deploy a script with static files to Deno Deploy
+    upgrade   Upgrade deployctl to the given version (defaults to latest)
+
+
+P:\2022\20220613a\3code\9_tools\deno\deploy\0502_Broadcastchannel>deployctl deploy --project=helloworld https://deno.land/x/deploy/examples/hello.js
+deployctl deploy
+Deploy a script with static files to Deno Deploy.
+
+To deploy a local script:
+  deployctl deploy --project=helloworld main.ts
+
+To deploy a remote script:
+  deployctl deploy --project=helloworld https://deno.com/examples/hello.js
+
+To deploy a remote script without static files:
+  deployctl deploy --project=helloworld --no-static https://deno.com/examples/hello.js
+
+To ignore the node_modules directory while deploying:
+  deployctl deploy --project=helloworld --exclude=node_modules main.tsx
+
+USAGE:
+    deployctl deploy [OPTIONS] <ENTRYPOINT>
+
+OPTIONS:
+        --exclude=<PATTERNS>  Exclude files that match this pattern
+        --include=<PATTERNS>  Only upload files that match this pattern
+        --import-map=<FILE>   Use import map file
+    -h, --help                Prints help information
+        --no-static           Don't include the files in the CWD as static files
+        --prod                Create a production deployment (default is preview deployment)
+    -p, --project=NAME        The project to deploy to
+        --token=TOKEN         The API token to use (defaults to DENO_DEPLOY_TOKEN env var)
+        --dry-run             Dry run the deployment process.
+
+error: Missing access token. Set via --token or DENO_DEPLOY_TOKEN.
+
+P:\2022\20220613a\3code\9_tools\deno\deploy\0502_Broadcastchannel> deployctl deploy --project=helloworld --exclude=node_modules main.ts
+deployctl deploy
+Deploy a script with static files to Deno Deploy.
+
+To deploy a local script:
+  deployctl deploy --project=helloworld main.ts
+
+To deploy a remote script:
+  deployctl deploy --project=helloworld https://deno.com/examples/hello.js
+
+To deploy a remote script without static files:
+  deployctl deploy --project=helloworld --no-static https://deno.com/examples/hello.js
+
+To ignore the node_modules directory while deploying:
+  deployctl deploy --project=helloworld --exclude=node_modules main.tsx
+
+USAGE:
+    deployctl deploy [OPTIONS] <ENTRYPOINT>
+
+OPTIONS:
+        --exclude=<PATTERNS>  Exclude files that match this pattern
+        --include=<PATTERNS>  Only upload files that match this pattern
+        --import-map=<FILE>   Use import map file
+    -h, --help                Prints help information
+        --no-static           Don't include the files in the CWD as static files
+        --prod                Create a production deployment (default is preview deployment)
+    -p, --project=NAME        The project to deploy to
+        --token=TOKEN         The API token to use (defaults to DENO_DEPLOY_TOKEN env var)
+        --dry-run             Dry run the deployment process.
+
+error: Missing access token. Set via --token or DENO_DEPLOY_TOKEN.

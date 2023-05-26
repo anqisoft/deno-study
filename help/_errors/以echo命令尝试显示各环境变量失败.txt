@@ -1,0 +1,12 @@
+echo %DENO_AUTH_TOKENS%
+echo %DENO_TLS_CA_STORE%
+echo %DENO_CERT%
+echo %DENO_DIR%
+echo %DENO_INSTALL_ROOT%
+echo %DENO_NO_PROMPT%
+echo %DENO_WEBGPU_TRACE%
+echo %DENO_JOBS%
+echo %HTTP_PROXY%
+echo %HTTPS_PROXY%
+echo %NO_COLOR%
+echo %NO_PROXY%

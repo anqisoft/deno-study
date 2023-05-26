@@ -1,0 +1,3 @@
+Deno 1.25.3
+exit using ctrl+d or close()
+Error: Io(Os { code: 6, kind: Uncategorized, message: "The handle is invalid." })

@@ -1,0 +1,1 @@
+copy /y deno1.29.1.exe D:\dev\deno\deno.exe

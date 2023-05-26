@@ -1,0 +1,20 @@
+deno-coverage 
+Print coverage reports
+
+USAGE:
+    deno coverage [OPTIONS] <files>...
+
+ARGS:
+    <files>...    
+
+OPTIONS:
+        --exclude=<regex>...    Exclude source files from the report [default:
+                                test\.(js|mjs|ts|jsx|tsx)$]
+    -h, --help                  Print help information
+        --ignore=<ignore>       Ignore coverage files
+        --include=<regex>...    Include source files in the report [default:
+                                ^file:]
+        --lcov                  Output coverage report in lcov format
+        --output=<output>       Output file (defaults to stdout) for lcov
+    -q, --quiet                 Suppress diagnostic output
+        --unstable              Enable unstable features and APIs

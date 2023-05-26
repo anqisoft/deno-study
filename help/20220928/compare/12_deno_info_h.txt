@@ -1,0 +1,40 @@
+deno-info 
+Show info about cache or info related to source file
+
+USAGE:
+    deno info [OPTIONS] [--] [file]
+
+ARGS:
+    <file>    
+
+OPTIONS:
+    -c, --config <FILE>
+            Specify the configuration file
+
+        --cert <FILE>
+            Load certificate authority from PEM encoded file
+
+    -h, --help
+            Print help information
+
+        --import-map <FILE>
+            Load import map file
+
+        --json
+            UNSTABLE: Outputs the information in JSON format
+
+        --location <HREF>
+            Show files used for origin bound APIs like the Web Storage API when
+            running a script with '--location=<HREF>'
+
+        --no-config
+            Disable automatic loading of the configuration file.
+
+    -q, --quiet
+            Suppress diagnostic output
+
+    -r, --reload[=<CACHE_BLOCKLIST>...]
+            Reload source code cache (recompile TypeScript)
+
+        --unstable
+            Enable unstable features and APIs

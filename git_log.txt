@@ -1,0 +1,23 @@
+	当提示
+	fatal: detected dubious ownership in repository at 'P:/anqi/Desktop/tech/deno'
+	'P:/anqi/Desktop/tech/deno' is owned by:
+        'S-1-5-32-544'
+	but the current user is:
+        'S-1-5-21-2910313589-2620187549-4190319292-1001'
+	To add an exception for this directory, call:
+		git config --global --add safe.directory P:/anqi/Desktop/tech/deno
+	时，根据提示执行下句代码即可：
+	git config --global --add safe.directory P:/anqi/Desktop/tech/deno
+
+	对已有目录，
+	git init
+	git remote add origin git+ssh://git@github.com/anqisoft/deno
+
+git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.

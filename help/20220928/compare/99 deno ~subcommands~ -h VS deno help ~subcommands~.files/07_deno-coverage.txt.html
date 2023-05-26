@@ -1,0 +1,395 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+.ln {text-align: right; word-break: normal; color: #000000; background-color: #f0f0f0;}
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">P:\anqi\Desktop\tech\deno\help\20220928\compare\~-h\07_deno-coverage.txt</th>
+<th colspan="2" class="title" style="width:50.000000%">P:\anqi\Desktop\tech\deno\help\20220928\compare\help~\07_deno-coverage.txt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">deno-coverage </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">deno-coverage </span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Print coverage reports</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">Print coverage reports </span><span class="sf17b18">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">profiles.</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">Collect</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">profile</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">deno</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">test:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; </span><span class="sf17b18">deno</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">test</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">--coverage=cov_profile</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">Print</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">report</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">stdout:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; </span><span class="sf17b18">deno</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">cov_profile</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">Include</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">urls</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">that</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">start</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">file</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">schema:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; </span><span class="sf17b18">deno</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">--include="^file:"</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">cov_profile</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">Exclude</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">urls</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">ending</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">test.ts</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">test.js:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; </span><span class="sf17b18">deno</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">--exclude="test\.(ts|js)"</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">cov_profile</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">Include</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">urls</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">that</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">start</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">file</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">schema</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">exclude</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">files</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">ending</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">with</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">test.ts</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">test.js,</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">an</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">url</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">match</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">it</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">must</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">match</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">include</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">pattern</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">and</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">not</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">match</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">exclude</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">pattern:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; </span><span class="sf17b18">deno</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">--include="^file:"</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">--exclude="test\.(ts|js)"</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">cov_profile</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">Write</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">a</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">report</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">using</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">lcov</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">format:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; </span><span class="sf17b18">deno</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">--lcov</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">--output=cov.lcov</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">cov_profile/</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">Generate</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">html</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">reports</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">lcov:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; </span><span class="sf17b18">genhtml</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">-o</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">html_cov</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">cov.lcov</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">USAGE:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">USAGE:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; deno coverage [OPTIONS] &lt;files&gt;...</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; deno coverage [OPTIONS] &lt;files&gt;...</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">ARGS:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">ARGS:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &lt;files&gt;... &nbsp; &nbsp;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &lt;files&gt;...</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #e9e9e9; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #fbf2bf; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">OPTIONS:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">OPTIONS:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; --exclude=&lt;regex&gt;... &nbsp; &nbsp;</span><span class="sf17b18">Exclude</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">source</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">files</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">report</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">[default:</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; --exclude=&lt;regex&gt;...</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">test\.(js|mjs|ts|jsx|tsx)$]</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Exclude</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">source</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">files</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">from</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">report</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">-h,</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">--help</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Print</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">help</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">information</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">--ignore=&lt;ignore&gt;</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b16">Ignore</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">files</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">[default:</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">test\.(js|mjs|ts|jsx|tsx)$]</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">--include=&lt;regex&gt;...</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">Include</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">source</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">files</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">report</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">[default:</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">^file:]</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">-h,</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">--help</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">--lcov</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Output</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">report</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">lcov</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">format</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Print</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">help</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">information</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">--output=&lt;output&gt;</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">Output</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">file</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">(defaults</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">stdout)</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">for</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">lcov</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">-q,</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">--quiet</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf17b18">Suppress</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">diagnostic</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">output</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">--ignore=&lt;ignore&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">--unstable</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Enable</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">unstable</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">features</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">APIs</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">Ignore</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">files</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">--include=&lt;regex&gt;...</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Include</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">source</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">files</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">report</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">[default:</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">^file:]</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">--lcov</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Output</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">report</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">lcov</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">format</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">--output=&lt;output&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Exports</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">coverage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">report</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">in</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">lcov</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">format</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">given</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">file.</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Filename</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">should</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">be</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">passed</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">along</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">with</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">'='</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">For</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">example</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">'--output=foo.lcov'</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">If</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">no</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">--output</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">arg</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">specified</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">then</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">report</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">is</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">written</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">to</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">stdout.</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">-q,</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">--quiet</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Suppress</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">diagnostic</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">output</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">--unstable</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">Enable</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">unstable</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">features</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">and</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">APIs</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

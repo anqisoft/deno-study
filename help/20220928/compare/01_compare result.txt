@@ -1,0 +1,5 @@
+01_deno_h_bench.txt is same to 00_deno_h.txt
+01_deno_bench_h.txt is similar to 01_deno_help_bench.txt, but the 01_deno_help_bench.txt has more details.
+
+We can use ‘deno help <subcommands>’ for full info, and ‘deno <subcommands> -h’ for simple info.
+Don’t use ‘deno -h <subcommands>’!

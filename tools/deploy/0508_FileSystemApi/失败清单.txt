@@ -1,0 +1,11 @@
+失败清单：
+04_readTextFile.ts Internal Server Error
+最初提示没有event
+_req之后加上event参数，则提示：
+TypeError: event.respondWith is not a function
+若尝试直接使用_req.respondWith，则提示：
+TypeError: _req.respondWith is not a function
+似乎有人提出过类似问题，但已无法打开此链接
+How to fix [deno-ts 2339] in the code for Deno Deploy
+https://dev.to/kawarimidoll/how-to-fix-deno-ts-2339-in-the-code-for-deno-deploy-5b47
+2021-8-28 · There is a warning that "respondWith is not defined in Event". It can be ignored by the Deno Deploy environment and deployctl , and deno lint does not get particularly angry. 

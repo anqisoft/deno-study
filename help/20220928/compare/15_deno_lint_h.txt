@@ -1,0 +1,48 @@
+deno-lint 
+Lint source files
+
+USAGE:
+    deno lint [OPTIONS] [files]...
+
+ARGS:
+    <files>...    
+
+OPTIONS:
+    -c, --config <FILE>
+            Specify the configuration file
+
+    -h, --help
+            Print help information
+
+        --ignore=<ignore>
+            Ignore linting particular source files
+
+        --json
+            Output lint result in JSON format
+
+        --no-clear-screen
+            Do not clear terminal screen when under watch mode
+
+        --no-config
+            Disable automatic loading of the configuration file.
+
+    -q, --quiet
+            Suppress diagnostic output
+
+        --rules
+            List available rules
+
+        --rules-exclude=<rules-exclude>
+            Exclude lint rules
+
+        --rules-include=<rules-include>
+            Include lint rules
+
+        --rules-tags=<rules-tags>
+            Use set of rules with a tag
+
+        --unstable
+            Enable unstable features and APIs
+
+        --watch
+            Watch for file changes and restart automatically
